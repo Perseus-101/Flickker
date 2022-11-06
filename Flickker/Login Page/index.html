@@ -1,0 +1,100 @@
+<html>
+     <head>
+      <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+        }
+        #main{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          background-image: url('back.png');
+          background-size: cover;
+          background-position: center;
+        }
+        #left_box{
+          flex: 0 0 40%;
+          height: 100%;
+          position: relative;
+          background-color: rgba(255, 255, 255,.25);
+          backdrop-filter: blur(10px);
+        }
+        #left_box h2{
+          font-size: 10rem;
+          font-family: sans-serif;
+          margin-left: 1em;
+          margin-top: .5em;
+          background-clip: text;
+          background-image: url('back.png');
+          background-position: 20% 60%;
+          background-size: 300%;
+          color: transparent;
+          -webkit-background-clip: text;
+        }
+        #right_box{
+          flex: 0 0 60%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        #right_box h2{
+          font-size: 10rem;
+          font-family: sans-serif;
+          color: #FFF5EE	;
+          position: absolute;
+          top: .5em;
+        }
+        .field input{
+          width: 400px;
+          height: 50px;
+          margin-left: 8em;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          border-bottom: 2px solid #121212;
+          font-size: 15px;
+          margin-top: 80px;
+        }
+        .field button{
+          height:35px;
+          width:120px;
+          background-color:#121212;
+          border:none;
+          outline:none;
+          border-radius:20px;
+          color:white;
+          position:relative;
+          margin-top:70px;
+          left:50%;
+          transform:translateX(-50%);
+        }
+        ::placeholder{
+            color:#121212;
+        }
+      </style>
+     </head>
+     <body>
+         <div id="main">
+             <div id="left_box">
+                 <h2>SIGN</h2>
+                 <div id="form">
+                     <div class="field">
+                         <input type="text" placeholder="EMAIL ID"/>
+                     </div>
+                     <div class="field">
+                         <input type="password" placeholder= "PASSWORD"/>
+                     </div>
+                     <div class="field">
+                         <button>LOGIN</button>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="right_box">
+              <h2>UP</h2>
+             </div>
+         </div>
+     </body>
+ </html>
