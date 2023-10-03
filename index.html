@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<link rel="stylesheet" href="css/index.css">
+	<title>Flickker</title>
+	
+	<div class="top-bar">
+		<div class="top-bar-container">
+			<div class="logo-container">
+				<a href="index.html"><img src="picture/icon.png" alt="Logo"></a>
+			</div>
+			<div class="links-container">
+				<a href="additional/help.html">Help</a> 
+				<a>|</a>
+				<a href="order/track-order.php">Track Order</a>
+			</div>
+		</div>
+	</div>
+	
+	<nav>
+		<div class="nav-container">
+			<div class="nav-left">
+				<ul>
+					<li> <a href="activewear/activewear.php">Activewear</a> </li>
+					<li> <a href="men/men.php">Mens</a> </li>
+					<li> <a href="women/women.php">Womens</a> </li>
+					<li> <a href="accessories/accessories.php">Accessories</a> </li>
+				</ul>
+			</div>
+			<div class="nav-center">
+				<a href="index.html" class="logo">Flickker</a>
+			</div>
+			<div class="nav-right">
+				<ul>
+					<li> <a href="admin/login-page.php">Admin Login</a> </li>
+					<li> <a href="order/view-cart.php">Cart</a> </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+</head>
+<body>
+	
+	<div class="fancy-class">
+		<div class="info">
+			<h1><span style="color: whitesmoke;">Flic</span><span style="color: #CC8CB1;">kker</span></h1>
+			<p style="color: #FFE3F3;">Discover your unique style</p>
+		</div>
+		<div class="image">
+			<img src="picture/men.png" alt="Product Image">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="column left">
+			<h1><span style="color: #CC8CB1;">Flic</span><span style="color: whitesmoke;">kker</span></h1>
+			<p style="color: #FFE3F3;">Embrace your unique style</p>
+		</div>
+		<div class="column right">
+			<img src="picture/women.png" alt="Product Image">
+		</div>
+	</div>
+	
+	<div class="scribble">
+		<h2 data-value="F L I C K K E R">F L I C K K E R</h2>
+	</div> 
+	
+	<footer>
+		<ul class="social-icons">
+			<li><a href="https://twitter.com"><img src="picture/twitter.png" alt="Twitter"></a></li>
+			<li><a href="https://facebook.com"><img src="picture/facebook.png" alt="Facebook"></a></li>
+			<li><a href="https://instagram.com"><img src="picture/instagram.png" alt="Instagram"></a></li>
+			<li><a href="https://youtube.com"><img src="picture/youtube.png" alt="Instagram"></a></li>
+		</ul>
+		<br><br>
+		<div class="copyright">
+			<p style="color: #fff;">&copy; 2023 Flickker. All rights reserved.</p>
+		</div>
+	</footer>
+	
+</body>
+
+<script>
+	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	
+	let interval = null;
+	
+	document.querySelector("h2").onmouseover = event => {  
+		let iteration = 0;
+		
+		clearInterval(interval);
+		
+		interval = setInterval(() => {
+			event.target.innerText = event.target.innerText
+			.split("")
+			.map((letter, index) => {
+				if(index < iteration) {
+					return event.target.dataset.value[index];
+				}
+				
+				return letters[Math.floor(Math.random() * 26)]
+			})
+			.join("");
+			
+			if(iteration >= event.target.dataset.value.length){ 
+				clearInterval(interval);
+			}
+			
+			iteration += 1 / 3;
+		}, 30);
+	}
+</script>
+
+</html>
