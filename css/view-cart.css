@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #0E0E10;
+}
+
+@font-face {
+    font-family: "Fancy Cursive";
+    src: url("../Amsterdam.ttf");
+    font-display: swap;
+}
+
+.top-bar {
+    background-color: #0E0E10;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -25px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.logo-container {
+    margin: 0;
+}
+
+.logo-container img {
+    margin-top: 40px;
+    height: 80px;
+}
+
+.links-container {
+    margin-right: -15px;
+    white-space: nowrap;
+}
+
+.links-container a {
+    color: #E1BED8;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+    color: #C785B5;
+}
+
+
+.links-container a:last-child {
+    margin-right: 0;
+}
+
+nav {
+    background-color: #0E0E10;
+    color: #C785B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 40px;
+}
+
+.nav-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 10px);
+    max-width: 1920px;
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+nav ul li a {
+    
+    color: #E1BED8;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    line-height: 40px;
+}
+
+nav ul li a:hover { 
+    background-color: #C785B5;
+    color: #0E0E10; 
+    transition: 0.3s all ease;
+    top: 0;   
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #E1BED8;
+    font-size: 46px;
+    text-decoration: none;
+    font-family: "Fancy Cursive";
+}
+
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 3.5;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 2;
+    text-align: right;
+}
+
+footer {
+    background-color: #0E0E10;
+    padding: 20px;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 0.8em;
+    margin: 0;
+}
+
+body{
+    line-height: 210%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px grey;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Mukta, sans-serif;
+  height: 50vh;
+  align-items: center;
+  font-size: 0.9rem;
+
+}
+
+  thead {
+    box-shadow: 0 5px 10px grey;
+  }
+
+  th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+
+  td {
+    padding: 1rem 2rem;
+  }
+
+  .bordered {
+    border: none;
+    padding: 5px;
+  }
+
+  .total-price1 {
+    text-align: right;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .total-price2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  button[type="submit"] {
+    background-color: pink;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  
+  button[type="submit"]:hover{
+    background-color: #1B1C1E;
+    color: pink;
+  }

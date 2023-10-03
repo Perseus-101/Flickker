@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #0E0E10;
+}
+
+@font-face {
+    font-family: "Fancy Cursive";
+    src: url("../Amsterdam.ttf");
+    font-display: swap;
+}
+
+.top-bar {
+    background-color: #0E0E10;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -25px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.logo-container {
+    margin: 0;
+}
+
+.logo-container img {
+    margin-top: 40px;
+    height: 80px;
+}
+
+.links-container {
+    margin-right: -15px;
+    white-space: nowrap;
+}
+
+.links-container a {
+    color: #E1BED8;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+    color: #C785B5;
+}
+
+
+.links-container a:last-child {
+    margin-right: 0;
+}
+
+nav {
+    background-color: #0E0E10;
+    color: #C785B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 40px;
+}
+
+.nav-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 10px);
+    max-width: 1920px;
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+nav ul li a {
+    
+    color: #E1BED8;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    line-height: 40px;
+}
+
+nav ul li a:hover { 
+    background-color: #C785B5;
+    color: #0E0E10; 
+    transition: 0.3s all ease;
+    top: 0;   
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #E1BED8;
+    font-size: 46px;
+    text-decoration: none;
+    font-family: "Fancy Cursive";
+}
+
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 3.5;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 2;
+    text-align: right;
+}
+
+footer {
+    background-color: #0E0E10;
+    padding: 20px;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 0.8em;
+    margin: 0;
+}
+
+body{
+    line-height: 210%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Basic code ends */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(250px, auto);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+.grid-item img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.grid-item img:hover {
+    transform: scale(1.2);
+}
+
+.product-name {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    color: #fff;
+}

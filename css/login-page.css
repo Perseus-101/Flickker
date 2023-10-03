@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #2B2B2B;
+    background-color: #1B1C1E;
+}
+
+/* Heading and Banner and Menu */
+.header{
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #1B1C1E;
+}
+
+.header-section{
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.theme{
+    float: right;
+    height: 100%;
+}
+
+.theme a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.theme a:last-child{
+    padding-right: 0;
+}
+
+.theme a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+footer {
+  background-color: #1B1C1E;
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright{
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid pink;
+    border-radius: 0px;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border: 1px solid rgb(147, 97, 106);
+    color: whitesmoke;
+  }
+  
+  input:focus{
+    outline: 1.5px solid pink;
+  }
+
+  button {
+    padding: 10px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(240, 204, 209);
+  }
+  

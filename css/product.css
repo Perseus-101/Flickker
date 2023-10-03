@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+    background-color: #1B1C1E;
+}
+
+@font-face {
+  font-family: "Fancy Cursive";
+  src: url("Amsterdam.ttf");
+  font-display: swap;
+}
+
+.top-bar {
+  background-color: #1B1C1E;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  width: 100%;
+  max-width: 1900px;
+}
+
+.logo-container {
+  margin: 0;
+}
+
+.logo-container img {
+  margin-top: 40px;
+  height: 80px;
+}
+
+.links-container {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.links-container a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.links-container a:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+
+.links-container a:last-child {
+  margin-right: 0;
+}
+
+
+
+nav {
+  background-color: #1B1C1E;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-container {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 10px);
+  max-width: 1500px;
+}
+
+nav ul {
+  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 ;
+  padding: 0 ;
+}
+
+nav ul li a {
+  
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 10px;
+  line-height: 40px;
+}
+
+nav ul li a:hover { 
+  background-color: pink;
+  color: #1B1C1E; 
+  transition: 0.3s all ease;
+  top: 0;   
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  color: #fff;
+  font-size: 46px;
+  text-decoration: none;
+  font-family: "Fancy Cursive";
+}
+
+.nav-left {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-center {
+  flex: 3.5;
+  text-align: center;
+}
+
+.nav-right {
+  flex: 2;
+  text-align: right;
+}
+
+
+footer {
+  background-color: #1B1C1E;
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright{
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* Basic code ends */
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-image {
+    flex: auto;
+    margin-left: 20%;
+}
+
+.product-image img {
+    flex: auto;
+    width: 600px;
+}
+
+.product-info {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.size-options {
+    display: flex;
+  }
+
+  .size-options label {
+    display: inline-block;
+    padding: 9px 18px;
+    margin: 0 6px;
+    border: 1px solid pink;
+    background-color: #1B1C1E;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .size-options label:hover {
+    background-color: pink;
+    color: #333;
+  }
+  
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  
+  .size-options input[type="radio"]:checked + label {
+    background-color: pink;
+    color: #333;
+  }
+
+  .quantity-dropdown {
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .quantity-dropdown span {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  
+  .quantity-dropdown select {
+    border: 1px solid pink;
+    padding: 9px 18px;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    color: white;
+  }
+  
+  .quantity-dropdown select:hover {
+    background-color: pink;
+    color: #333;
+  
+  }
+  
+  .quantity-dropdown select option {
+    background: #333;
+    color: #fff;
+  }
+  
+  .quantity-dropdown select option:hover {
+    background-color: pink;
+    color: #333;
+  }
+
+  button {
+    background-color: #1B1C1E;
+    border: double;
+    border-color: pink;
+    border-width: 2px;
+    color: #fff;
+    padding: 20px 120px; /* adjust top and bottom padding values */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+    color: #1B1C1E;
+}

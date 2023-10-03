@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #2B2B2B;
+    background-color: #1B1C1E;
+}
+
+/*Menu*/
+@font-face {
+    font-family: "Fancy Cursive";
+    src: url("Amsterdam.ttf");
+    font-display: swap;
+}
+
+.top-bar {
+    background-color: #1B1C1E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    width: 100%;
+    max-width: 1900px;
+}
+
+.logo-container {
+    margin: 0;
+}
+
+.logo-container img {
+    margin-top: 40px;
+    height: 80px;
+}
+
+.links-container {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.links-container a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+    color: pink;
+}
+
+
+.links-container a:last-child {
+    margin-right: 0;
+}
+
+
+nav {
+    background-color: #1B1C1E;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 10px);
+    max-width: 1500px;
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+nav ul li a {
+    
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    line-height: 40px;
+}
+
+nav ul li a:hover { 
+    background-color: pink;
+    color: #1B1C1E; 
+    transition: 0.3s all ease;
+    top: 0;   
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 46px;
+    text-decoration: none;
+    font-family: "Fancy Cursive";
+}
+
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 3.5;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 2;
+    text-align: right;
+}
+
+/*Footer*/
+footer {
+  background-color: #1B1C1E;
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright{
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.social-icons li a {
+  display: block;
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.social-icons li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Content*/
+.man{
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: auto;
+}
+
+.fancy-class {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+  
+.info {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 200px;
+}
+
+.info h1{
+    margin: 0;
+    font-size: 102px;
+    font-weight: 700;
+}
+
+.info p{
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.image {
+    flex: 1;
+    margin-left: 40px;
+}
+  
+.image img {
+    width: 70%;
+    height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+}
+  
+.left {
+    box-sizing: border-box;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.left h1{
+    margin: 0;
+    font-size: 102px;
+    font-weight: 700;
+}
+
+.left p{
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.right {
+    box-sizing: border-box;
+    text-align: right;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+/*Style the FLICKKER Scribble*/
+.scribble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    background-image: url('../picture/out-0-transformed.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin: 0rem;
+    overflow: hidden;
+  }
+  
+  /* Style the h1 heading */
+  .scribble h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: pink;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0rem, 0vw, 0rem);
+  }
+  
+  .scribble h2:hover {
+    background-color: pink;
+    color: #1B1C1E;
+  }
